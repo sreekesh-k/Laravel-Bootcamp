@@ -13,4 +13,7 @@ class Chirp extends Model
     {
         return $this->hasMany(Chirp::class);
     }
+    protected $fillable = [
+        'message',
+    ];
 }
